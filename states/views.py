@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+#Serializer
+from .serializers import stateSerializer
+#Model
+from .models import state
+
+
+class stateView(viewsets.ModelViewSet):
+
+    serializer_class =  stateSerializer
+    queryset = state.objects.all()
+
+
