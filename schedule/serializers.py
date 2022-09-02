@@ -7,9 +7,6 @@ from users.serializers import userSerializer
 
 class scheduleSerializer (serializers.ModelSerializer):
 
-    access_point = accessPointSerializer(many=True)
-    user = userSerializer()
-
     class Meta:
         model = schedule
         fields = '__all__'

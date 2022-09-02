@@ -1,4 +1,3 @@
-from unittest.util import _MAX_LENGTH
 from rest_framework import serializers
 from .models import user
 
@@ -6,7 +5,10 @@ class userSerializer (serializers.ModelSerializer):
     
     class Meta:
         model = user
-        fields = ('__all__')
+        fields = ('username',  "last_name",  "first_name",  "is_owner", "is_superuser", "password" )
+
+    def create(self, validated_data):
+        return user.objects.create_user(**validated_data)
 
 
 class userSingUpSerializer(serializers.Serializer):

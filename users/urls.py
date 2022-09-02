@@ -7,6 +7,6 @@ router = DefaultRouter()
 router.register(r'users', userView, basename="users")
 
 urlpatterns = [
-    path('users/crud/',include(router.urls)),
-    path('singup/',  userSingUPview.as_view())
+    path('',include(router.urls)),
+    # path('singup/',  userSingUPview.as_view())
 ]
