@@ -1,6 +1,7 @@
 from django.db import models
 from countries.models import country
 from states.models import state
+from users.models import user
 
 # Create your models here.
 
@@ -14,6 +15,7 @@ class company(models.Model):
     website = models.CharField(max_length=50,blank=False)
     country_code = models.ForeignKey(country, on_delete=models.CASCADE)
     state =  models.ForeignKey(state, on_delete=models.CASCADE)
+    owner = models.ForeignKey(user, on_delete=models.DO_NOTHING)
 
 
 

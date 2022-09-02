@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-+i&#1xro%3e@1qkt3a$*o9cgmd!5+2@)q0g7i_793ck4_q(zg9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.190.74', 'localhost']
 
-
+SITE_ID = 1
 
 AUTH_USER_MODEL = 'users.user'
 # Application definition
@@ -39,13 +39,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework.authtoken',
+    'rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
     'users',
     'countries',
     'states',
     'accessPoints',
     'schedule',
     'companies',
-    'rest_framework'
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -89,6 +95,18 @@ DATABASES = {
     }
 }
 
+# Django REST Framwork
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

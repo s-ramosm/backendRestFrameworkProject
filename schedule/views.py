@@ -8,5 +8,5 @@ from .models import schedule
 
 class scheduleView(viewsets.ModelViewSet):
 
-    serializer_class =  schedule
+    serializer_class =  scheduleSerializer
     queryset = schedule.objects.all()
