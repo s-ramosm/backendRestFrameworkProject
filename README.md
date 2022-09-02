@@ -1,5 +1,15 @@
 # backendRestFrameworkProject
 
+# EJECUCION
+
+Para la ejecución de este proyecto ejecute en la consola del IDE o en el CMD los siguientes comandos:
+
+pip install -r requirements.txt
+python manage.py runserver
+
+Si tiene dudas sobre la ejecución puede contactarse a:
+E-mail: saircontactoramos@gmail.com
+Tel./Whatsapp: 3005741175
 
 ## CRUD ENPOINTS
 
