@@ -1,4 +1,5 @@
 Django==4.1
+<<<<<<< HEAD
 djangorestframework==3.13.1
 asgiref==3.5.2
 certifi==2022.6.15
@@ -31,3 +32,6 @@ six==1.16.0
 sqlparse==0.4.2
 tzdata==2022.2
 urllib3==1.26.12
+=======
+djangorestframework==3.13.1
+>>>>>>> bc0aa42eb524c864ff3798b3593e67eeba68c8d0

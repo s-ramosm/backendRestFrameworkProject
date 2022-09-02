@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from ast import Raise
 from django.shortcuts import render
 from rest_framework.response import Response
@@ -15,10 +16,20 @@ from companies.models import company
 
 
 from src.mail import send_email
+=======
+from django.shortcuts import render
+from rest_framework import viewsets
+
+#Serializer
+from .serializers import userSerializer
+#Model
+from .models import user
+>>>>>>> bc0aa42eb524c864ff3798b3593e67eeba68c8d0
 
 
 class userView(viewsets.ModelViewSet):
 
+<<<<<<< HEAD
     permission_classes=[IsAuthenticated]
     serializer_class =  userSerializer
     queryset = user.objects.all()
@@ -58,3 +69,7 @@ class userSingUPview(APIView):
         
         return Response(serializer.save())
 
+=======
+    serializer_class =  userSerializer
+    queryset = user.objects.all()
+>>>>>>> bc0aa42eb524c864ff3798b3593e67eeba68c8d0
