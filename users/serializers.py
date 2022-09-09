@@ -21,3 +21,4 @@ class userSingUpSerializer(serializers.Serializer):
     def create(self, validated_data):
 
         return user.objects.create_user(**validated_data)         
+

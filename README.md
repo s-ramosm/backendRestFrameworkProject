@@ -1,6 +1,18 @@
 # backendRestFrameworkProject
 
 
+# EJECUCION
+
+Para la ejecución de este proyecto ejecute en la consola del IDE o en el CMD los siguientes comandos:
+
+pip install -r requirements.txt
+python manage.py runserver
+
+Si tiene dudas sobre la ejecución puede contactarse a:
+E-mail: saircontactoramos@gmail.com
+Tel./Whatsapp: 3005741175
+
+
 ## CRUD ENPOINTS
 
 # Autenticacion
@@ -32,4 +44,6 @@ El endpoint en post controla si se esta crando un usuario o un dueño de empresa
 Controla el registro de un acceso a un un punto 
 
 # Horarios
+
 <host>:<port>/schedule/
+
