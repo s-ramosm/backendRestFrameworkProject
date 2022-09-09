@@ -9,6 +9,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('accessPoints', '0001_initial'),
+    ]
 
     operations = [
         migrations.CreateModel(
