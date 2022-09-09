@@ -37,3 +37,4 @@ class accessPointView(viewsets.ModelViewSet):
             return Response(False)
 
         return Response(True)
+
